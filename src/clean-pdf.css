@@ -1,0 +1,21 @@
+/* "Clean Your pdf" tab. Only new selectors; uses the app's theme variables. */
+#clTab .qr-card { margin-top:12px; }
+#clTab .qr-card:first-child { margin-top:0; }
+#clTab label.inl { white-space:normal; align-items:flex-start; }
+#clFile { color:transparent; }
+#clTab input[type=number] { width:84px; }
+#clChars { width:96px; font-family:ui-monospace,Menlo,Consolas,monospace; }
+.cl-row { display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-top:1px solid var(--border); font-size:14px; }
+.cl-row:first-child { border-top:0; }
+.cl-row span { color:var(--muted); }
+.cl-row b { text-align:end; overflow-wrap:anywhere; }
+@media (max-width:420px) { .qr-tabs button { font-size:13px; padding:0 4px; } }
+.cl-title { font-weight:700; margin:2px 0 4px; }
+.cl-opts { display:flex; flex-direction:column; gap:8px; }
+.cl-opt { display:flex; gap:12px; align-items:flex-start; padding:12px; border:1px solid var(--border); border-radius:12px; background:var(--card2); cursor:pointer; }
+.cl-opt:has(input:checked) { border-color:var(--accent); }
+.cl-opt input { margin-top:3px; flex:none; }
+.cl-opt span { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.cl-opt small { color:var(--muted); font-size:12.5px; }
+.cl-adv { margin-top:12px; }
+.cl-adv summary { cursor:pointer; color:var(--muted); font-weight:600; padding:6px 0; }
